@@ -1,0 +1,20 @@
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file+'/'+$font-family+'.otf');
+    src: url($font-file+'/'+$font-family+'.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font('Graphik', '../assets/fonts/Graphik');
+@include font('Graphik-Bold', '../assets/fonts/Graphik');
+@include font('Graphik-Extralight', '../assets/fonts/Graphik');
+@include font('Graphik-Light', '../assets/fonts/Graphik');
+@include font('Graphik-Medium', '../assets/fonts/Graphik');
+@include font('Graphik-Regular', '../assets/fonts/Graphik');
+@include font('Graphik-Semibold', '../assets/fonts/Graphik');
+@include font('Graphik-Super', '../assets/fonts/Graphik');
+@include font('Graphik-Thin', '../assets/fonts/Graphik');
+
